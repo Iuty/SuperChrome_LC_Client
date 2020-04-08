@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{
+			"path": "static"
+		},
+		{
+			"path": "api"
+		},
+		{
+			"path": "model"
+		}
+	]
+}

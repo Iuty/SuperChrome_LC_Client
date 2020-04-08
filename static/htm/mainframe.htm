@@ -1,0 +1,125 @@
+<div>
+<link href="/css/mainframe.css" rel="stylesheet" type="text/css" />
+<link href="/css/tank.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+var outputvalue = 10;
+
+function setTank1(percent){
+	$("#tank1_text").text(percent+'%');
+	$("#tank1_c").animate({
+		height:percent+'%'
+	},300);
+}
+
+function setTank2(percent){
+	$("#tank2_text").text(percent+'%');
+	$("#tank2_c").animate({
+		height:percent+'%'
+	},300);
+}
+
+function setTank3(percent){
+	$("#tank3_text").text(percent+'%');
+	$("#tank3_c").animate({
+		height:percent+'%'
+	},300);
+}
+
+function setTanka(percent){
+	if(percent < 90){
+		$("#tanka_c").css("background" , "#fbad4c");
+	}
+	else{
+		$("#tanka_c").css("background" , "#fb2020");
+	}
+	$("#tanka_text").text(percent+'%');
+	$("#tanka_c").animate({
+		height:percent+'%'
+	},300);
+}
+
+function animateTankA()
+{
+	outputvalue = outputvalue + 1;
+	if (outputvalue > 99){
+		outputvalue = 0;
+	}
+	setTanka(outputvalue);
+	//window.setInterval(animateTankA,1000);
+}
+$(document).ready(function(){
+
+/*
+      $(".c1").animate({
+
+		  height: "70%"
+
+	  },1000);
+
+	  $(".c1").animate({
+
+		  height: "10%"
+
+	  },1000);
+
+	  $(".c1").animate({
+
+		  height: "90%"
+
+	  },1000);
+*/
+	setTank1(70);
+	setTank2(78);
+	setTank3(90);
+	//setTanka(12);
+	window.setInterval(animateTankA,1000);
+	//animateTankA();
+	
+
+});
+
+</script>
+<div class="sub-title-div"></div>
+<div id="eqp_cur_status">
+
+</div>
+<div id="eqp_tank_status">
+	<h3 style="color:#606010; text-align: left;text-indent: 5%;">储液罐监控：</h3>
+	<div>
+		<div class="input_tank">
+			<div class="r_out">
+				<div class="r_in">
+					<div class="r_c c1" id="tank1_c"></div>
+					<div class="r_num" id = "tank1_text"></div>
+				</div>
+				<p style="color:#f0f040;">上样罐</p>
+			</div>
+			<div class="r_out">
+				<div class="r_in">
+					<div class="r_c c2" id = "tank2_c"></div>
+					<div class="r_num" id = "tank2_text"></div>
+				</div>
+			<p style="color:#f0f040;">洗脱罐</p>
+			</div>
+			<div class="r_out">
+				<div class="r_in">
+					<div class="r_c c3" id="tank3_c"></div>
+					<div class="r_num" id = "tank3_text"></div>
+				</div>
+			<p style="color:#f0f040;">修饰罐</p>
+			</div>
+
+		</div>
+		<div class="output_tank">
+			<div class="r_out">
+				<div class="r_in">
+					<div class="r_c ca" id = "tanka_c"></div>
+					<div class="r_num" id = "tanka_text"></div>
+				</div>
+			<p style="color:#40f040;">目标罐</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
