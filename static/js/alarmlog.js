@@ -43,11 +43,12 @@ function initAlarmLog(){
 function getLayuiTable(){
 	layui.use('table', function(){
   var table = layui.table;
+  tab_height = $(document).height()*0.96*0.3*0.75
   
   //第一个实例
   table.render({
     elem: '#eqp_alarm_logs',
-    height: '190%',
+    height: tab_height,
     //url: '/demo/table/user/', //数据接口
     //page: true ,//开启分页
     data:[

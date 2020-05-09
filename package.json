@@ -1,0 +1,28 @@
+{
+  "name": "express",
+  "description": "Fast,SuperChrome_LC_Client",
+  "version": "1.20.509.944",
+  "author": "Iuty",
+  
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iuty/SuperChrome_LC_Client.git"
+  },
+  
+  "dependencies": {
+    "jquery":"3.4.1",
+    "echart":">1.0.0"
+  },
+  "devDependencies": {
+    
+  },
+  
+  
+  "scripts": {
+    "start": "npm run dev",
+  }
+ 
+  
+  
+}

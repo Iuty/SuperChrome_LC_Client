@@ -15,7 +15,7 @@ function getOutput(){
 
     legend: {
         textStyle:{
-                            fontSize: 8,//字体大小
+                            //fontSize: 8,//字体大小
                             color: '#ffffff'//字体颜色
                         },
         data: ['产出', '平均纯度']

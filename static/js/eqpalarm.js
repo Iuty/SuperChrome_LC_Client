@@ -70,7 +70,7 @@ function getAlarmUnit(){
         //itemWidth: 15,
         //itemHeight: 8,
         textStyle:{
-                            fontSize: 8,//字体大小
+                            //fontSize: 8,//字体大小
                             color: '#ffffff'//字体颜色
                         },
         data: ['提纯异常', '柱效异常', '1柱传感器异常', '结晶异常', '修饰液液位低', '目标物容器已满', '温控异常']

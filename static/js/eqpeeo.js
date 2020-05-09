@@ -18,7 +18,7 @@ function setEeoChartOption(data){
         legend: {
         
             textStyle:{
-                            fontSize: 8,//字体大小
+                            //fontSize: 8,//字体大小
                             color: '#ffffff'//字体颜色
                         },
             itemWidth:15,

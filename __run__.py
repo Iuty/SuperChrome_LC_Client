@@ -7,8 +7,8 @@ from api.status_ import *
 app = Flask(__name__,static_folder='static/')
 api = Api(app)
 
-host = '127.0.0.1'
-port = '8000'
+host = '0.0.0.0'
+port = 7740
 
 app.config['SECRET_KEY'] = 'myskey'
 app.config['PERMANENT_SESSION_LIFETIME']=datetime.timedelta(days=15)

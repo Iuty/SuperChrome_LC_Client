@@ -4,11 +4,11 @@ var alarmlogtable;
 function initOutputCheckLog(){
 	layui.use('table', function(){
   var table = layui.table;
-  
+  tab_height = $(document).height()*0.96*0.65*0.85
   //第一个实例
   table.render({
     elem: '#output_check_table',
-    height: '480%',
+    height: tab_height,
     //url: '/demo/table/user/', //数据接口
     //page: true ,//开启分页
     data:[
