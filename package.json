@@ -9,7 +9,7 @@
     "type": "git",
     "url": "git+https://github.com/Iuty/SuperChrome_LC_Client.git"
   },
-  
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "dependencies": {
     "jquery":"3.4.1",
     "echart":">1.0.0"
